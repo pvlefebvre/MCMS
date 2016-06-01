@@ -9,6 +9,8 @@
 #import "CreatureViewController.h"
 
 @interface CreatureViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *editTextField;
+@property (weak, nonatomic) IBOutlet UILabel *creatureNameLabel;
 
 @end
 
@@ -21,6 +23,16 @@
     
 }
 
-
-
+- (IBAction)onEditButtonPressed:(UIBarButtonItem *)sender {
+    if([sender.title isEqualToString:@"Done"]){
+        sender.title = @"Edit";
+        self.editTextField.hidden = YES;
+    }else{
+        sender.title = @"Done";
+        self.editTextField.hidden = NO;
+        self.editTextField.text = self.creatureNameLabel.text;
+    }
+    
+    
+}
 @end
