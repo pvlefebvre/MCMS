@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MagicalCreature.h"
 
 @interface ViewController : UIViewController
 
+@property MagicalCreature *editedCreature;
+@property NSIndexPath *indexPathForEditedCreature;
 
 @end
 

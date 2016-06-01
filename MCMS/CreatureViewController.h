@@ -12,5 +12,6 @@
 @interface CreatureViewController : ViewController
 
 @property MagicalCreature *creature;
+@property NSIndexPath *indexPath;
 
 @end

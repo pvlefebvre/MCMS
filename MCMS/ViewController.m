@@ -56,6 +56,13 @@
     
     CreatureViewController *dvc = segue.destinationViewController;
     dvc.creature = [self.creatures objectAtIndex:indexPath.row];
+    dvc.indexPath = indexPath;
+    
 }
 
+-(IBAction)unwindBackToStart:(UIStoryboardSegue *)sender {
+    [self.creatures removeObjectAtIndex:self.indexPathForEditedCreature.row];
+    [self.creatures insertObject:self.editedCreature atIndex:self.indexPathForEditedCreature.row];
+    [self.tableView reloadData];
+}
 @end
