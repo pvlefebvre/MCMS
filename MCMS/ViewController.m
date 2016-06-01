@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import "MagicalCreature.h"
+#import "CreatureViewController.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property NSMutableArray *creatures;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextField *creatureNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *descritionTextField;
 @end
 
 @implementation ViewController
@@ -39,6 +43,19 @@
     return self.creatures.count;
 }
 
+- (IBAction)onAddButtonPressed:(UIBarButtonItem *)sender {
+    MagicalCreature *newCreature = [[MagicalCreature alloc] initWithName:self.creatureNameTextField.text andDescription:self.descritionTextField.text];
+    [self.creatures addObject:newCreature];
+    [self.tableView reloadData];
+    self.creatureNameTextField.text = @"";
+    self.descritionTextField.text = @"";
+}
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    CreatureViewController *dvc = segue.destinationViewController;
+    dvc.creature = [self.creatures objectAtIndex:indexPath.row];
+}
 
 @end

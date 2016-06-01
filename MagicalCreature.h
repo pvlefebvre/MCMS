@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface MagicalCreature : NSObject
+
 @property NSString *name;
+@property NSString *descriptionOfCreature;
+
+-(instancetype)initWithName:(NSString *)name andDescription:(NSString *)description;
+
+
 @end

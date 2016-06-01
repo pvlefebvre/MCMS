@@ -14,6 +14,7 @@
 		E6E3D5D51CFF6B9300ABB481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3D5D41CFF6B9300ABB481 /* Assets.xcassets */; };
 		E6E3D5D81CFF6B9300ABB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E3D5D61CFF6B9300ABB481 /* LaunchScreen.storyboard */; };
 		E6E3D5E11CFF6C9400ABB481 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E3D5E01CFF6C9400ABB481 /* MagicalCreature.m */; };
+		F9EC68361CFF7702001636C1 /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EC68351CFF7702001636C1 /* CreatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E6E3D5D91CFF6B9300ABB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E3D5DF1CFF6C9400ABB481 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicalCreature.h; path = ../MagicalCreature.h; sourceTree = "<group>"; };
 		E6E3D5E01CFF6C9400ABB481 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagicalCreature.m; path = ../MagicalCreature.m; sourceTree = "<group>"; };
+		F9EC68341CFF7702001636C1 /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureViewController.h; sourceTree = "<group>"; };
+		F9EC68351CFF7702001636C1 /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +64,12 @@
 		E6E3D5C71CFF6B9300ABB481 /* MCMS */ = {
 			isa = PBXGroup;
 			children = (
-				E6E3D5DF1CFF6C9400ABB481 /* MagicalCreature.h */,
-				E6E3D5E01CFF6C9400ABB481 /* MagicalCreature.m */,
 				E6E3D5CB1CFF6B9300ABB481 /* AppDelegate.h */,
 				E6E3D5CC1CFF6B9300ABB481 /* AppDelegate.m */,
+				E6E3D5DF1CFF6C9400ABB481 /* MagicalCreature.h */,
+				E6E3D5E01CFF6C9400ABB481 /* MagicalCreature.m */,
+				F9EC68341CFF7702001636C1 /* CreatureViewController.h */,
+				F9EC68351CFF7702001636C1 /* CreatureViewController.m */,
 				E6E3D5CE1CFF6B9300ABB481 /* ViewController.h */,
 				E6E3D5CF1CFF6B9300ABB481 /* ViewController.m */,
 				E6E3D5D11CFF6B9300ABB481 /* Main.storyboard */,
@@ -157,6 +162,7 @@
 				E6E3D5D01CFF6B9300ABB481 /* ViewController.m in Sources */,
 				E6E3D5E11CFF6C9400ABB481 /* MagicalCreature.m in Sources */,
 				E6E3D5CD1CFF6B9300ABB481 /* AppDelegate.m in Sources */,
+				F9EC68361CFF7702001636C1 /* CreatureViewController.m in Sources */,
 				E6E3D5CA1CFF6B9300ABB481 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				E6E3D5DE1CFF6B9300ABB481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
